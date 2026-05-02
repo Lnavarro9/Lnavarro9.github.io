@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Navarro | Portfolio</title>
-    <p>
-<a href="resume.pdf" target="_blank" style="color: #00bfff;">
-📄 Download Resume
-</a>
-</p>
+
     <style>
         body {
             margin: 0;
@@ -19,40 +15,93 @@
         }
 
         header {
-            padding: 60px 20px;
+            padding: 70px 20px;
             background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa') no-repeat center/cover;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 15px auto;
         }
 
         section {
-            padding: 40px 20px;
+            padding: 45px 20px;
         }
 
         .project {
-            margin: 20px auto;
-            max-width: 600px;
+            margin: 25px auto;
+            max-width: 700px;
             border: 1px solid #444;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 25px;
+            border-radius: 12px;
+            background: #050505;
+        }
+
+        .project:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+            border-color: #00bfff;
         }
 
         a {
             color: #00bfff;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 18px;
+            border: 1px solid #00bfff;
+            border-radius: 8px;
+        }
+
+        .skills {
+            max-width: 700px;
+            margin: auto;
+            line-height: 2;
+        }
+
+        .about {
+            max-width: 750px;
+            margin: auto;
+            font-size: 1.05rem;
+        }
+
+        footer {
+            padding: 25px;
+            border-top: 1px solid #333;
+            color: #ccc;
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>Luis Navarro</h1>
-    <p><p>
-Computer Science student at SNHU building real-world applications in C++, Python, and Java.
-Focused on problem-solving, optimization, and practical software systems.
-</p>
+
+    <p>
+        Computer Science student at SNHU building real-world applications in C++, Python, and Java.
+        Focused on problem-solving, optimization, and practical software systems.
+    </p>
+
+    <p>
+        <a class="button" href="Luis_Navarro_Resume_1page.pdf" target="_blank">📄 Download Resume</a>
+        <a class="button" href="https://github.com/Lnavarro9" target="_blank">💻 GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/luis-navarro-a6341b112" target="_blank">🔗 LinkedIn</a>
+    </p>
 </header>
 
 <section>
@@ -60,29 +109,54 @@ Focused on problem-solving, optimization, and practical software systems.
 
     <div class="project">
         <h3>Galaxy’s Edge Ride Planner</h3>
-        <p>C++ console app that optimizes ride wait times using sorting and priority logic.</p>
-        <a href="https://github.com/Lnavarro9/galaxys-edge-ride-planner-cpp" target="_blank">View Project</a>
+        <p>
+            C++ console app that simulates Disneyland Galaxy’s Edge ride planning using
+            dynamic ride optimization, user-defined priorities, time-of-day strategy,
+            and file persistence.
+        </p>
+        <a href="https://github.com/Lnavarro9/galaxys-edge-ride-planner-cpp" target="_blank">
+            🔗 View Code on GitHub
+        </a>
     </div>
 
     <div class="project">
         <h3>Budget Tracker</h3>
-        <p>C++ app that tracks expenses and analyzes spending using file I/O.</p>
-        <a href="https://github.com/Lnavarro9/budget-tracker-cpp" target="_blank">View Project</a>
+        <p>
+            C++ console app that tracks expenses, calculates totals, and analyzes
+            spending patterns by category using file I/O and structured data.
+        </p>
+        <a href="https://github.com/Lnavarro9/budget-tracker-cpp" target="_blank">
+            🔗 View Code on GitHub
+        </a>
     </div>
+</section>
 
+<section>
+    <h2>Skills</h2>
+    <p class="skills">
+        C++ • Python • Java • SQL • Git • GitHub • Visual Studio •
+        File I/O • Data Structures • Algorithms • Object-Oriented Programming
+    </p>
 </section>
 
 <section>
     <h2>About Me</h2>
-    <p>
-        Computer Science student at SNHU with experience in building real-world applications using C++, Python, and Java.
+    <p class="about">
+        I’m a Computer Science student at Southern New Hampshire University with a strong interest
+        in software engineering, practical problem-solving, and building efficient applications.
+        I bring leadership experience from high-volume logistics operations and apply that same
+        systems-thinking mindset to software development.
     </p>
 </section>
 
 <section>
     <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
+    <p>Email: <a href="mailto:luis121813@gmail.com">luis121813@gmail.com</a></p>
 </section>
+
+<footer>
+    <p>© 2026 Luis Navarro | Built with HTML, CSS, and GitHub Pages</p>
+</footer>
 
 </body>
 </html>
