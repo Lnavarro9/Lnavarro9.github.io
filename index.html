@@ -54,7 +54,6 @@
     .logo {
       font-weight: 900;
       color: #ffffff;
-      letter-spacing: 0.5px;
     }
 
     .nav-links {
@@ -62,10 +61,6 @@
       gap: 22px;
       color: #cbd5e1;
       font-size: 0.95rem;
-    }
-
-    .nav-links a {
-      transition: 0.2s ease;
     }
 
     .nav-links a:hover {
@@ -76,44 +71,16 @@
       min-height: 100vh;
       display: flex;
       align-items: center;
-      position: relative;
       background:
         radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.20), transparent 28%),
         radial-gradient(circle at 80% 30%, rgba(168, 85, 247, 0.16), transparent 28%),
         linear-gradient(rgba(2, 6, 23, 0.82), rgba(2, 6, 23, 0.96)),
         url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa') center/cover no-repeat;
-      overflow: hidden;
-    }
-
-    header::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-      background-size: 48px 48px;
-      mask-image: linear-gradient(to bottom, black, transparent 80%);
-      pointer-events: none;
     }
 
     .hero-content {
       max-width: 820px;
-      position: relative;
-      z-index: 2;
       padding-top: 70px;
-      animation: fadeUp 0.9s ease both;
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(24px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     .badge {
@@ -165,7 +132,6 @@
     .btn-primary {
       background: #38bdf8;
       color: #082f49;
-      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
     }
 
     .btn-primary:hover {
@@ -219,13 +185,11 @@
       overflow: hidden;
       transition: 0.25s ease;
       box-shadow: 0 24px 65px rgba(0, 0, 0, 0.30);
-      position: relative;
     }
 
     .project-card:hover {
       transform: translateY(-8px);
       border-color: rgba(56, 189, 248, 0.45);
-      box-shadow: 0 28px 75px rgba(56, 189, 248, 0.12);
     }
 
     .project-banner {
@@ -319,7 +283,6 @@
       border-radius: 26px;
       padding: 34px;
       color: #cbd5e1;
-      box-shadow: 0 24px 65px rgba(0, 0, 0, 0.28);
     }
 
     .contact-card {
@@ -378,6 +341,7 @@
     }
   </style>
 </head>
+
 <body>
   <nav>
     <div class="nav-inner">
@@ -472,6 +436,7 @@
         <h2>Technical Skills</h2>
         <p>Technologies and concepts I’m actively building with.</p>
       </div>
+
       <div class="skills-grid">
         <div class="skill">C++</div>
         <div class="skill">Python</div>
@@ -491,6 +456,7 @@
         <h2>About Me</h2>
         <p>Leadership experience meets software development.</p>
       </div>
+
       <div class="about-card">
         <p>
           I’m a Computer Science student at Southern New Hampshire University with a 3.575 GPA, actively building practical software projects that apply data structures, algorithms, file I/O, and optimization logic.
@@ -508,6 +474,7 @@
       <div class="contact-card">
         <h2>Let’s Connect</h2>
         <p>I’m open to entry-level software engineering opportunities, internships, and technical roles.</p>
+
         <div class="buttons" style="justify-content:center;">
           <a class="btn btn-primary" href="mailto:luis121813@gmail.com">Email Me</a>
           <a class="btn btn-secondary" href="https://github.com/Lnavarro9" target="_blank">GitHub</a>
